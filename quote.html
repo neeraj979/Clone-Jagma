@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jagma</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat&display=swap" rel="stylesheet">
+         <!-------------------------------------font awesome---------------------------------->
+    <script src="https://kit.fontawesome.com/028fabaf0d.js" crossorigin="anonymous"></script>
+      <!----------jquery css------------>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+  .quote_field span{
+    margin: 0.8rem 1.8rem !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  .contact-sub-div span{
+    display: block !important;
+    width: 100% !important;
+  }
+  .table th, td{
+    font-size: 1.8rem !important;
+  }
+  .database_div h1{
+    cursor:  pointer !important;
+    padding: 1rem 0;
+    background-color: blue !important;
+    color: #fff !important;
+  }
+  .database_div h1:hover{
+    background-color: blueviolet !important;
+  }
+  .message_box{
+    overflow-x: scroll !important;
+  }
+  .active1{
+    background-color: blueviolet !important;
+  }
+</style>
+<body>
+    <div class="header" id="header_id">
+        <div class="top-bar">
+            <div class="left_top-bar">
+                <i class="fa-solid fa-phone"></i><span>+91 9234738747</span>
+               <i class="fa-solid fa-envelope"></i><span>support@jagmaconsulting.com</span>
+            </div>
+            <div class="right_top-bar">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar-id">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/jagma.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutId">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#serviceId">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quote.html">Free Quote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="feature.html">Our Freatures</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+              
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img1.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block" data-aos="fade-up"
+            data-aos-duration="2000">
+                <h1>Creative & Innovative Digital Solution</h1>
+                <a href="" class="btn-quote" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="2500">Free Quote</a>
+                <a href="" class="btn-contact" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="2500">Contact Us</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img2.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block" data-aos="fade-up"
+            data-aos-duration="3000">
+              <h1>Creative & Innovative Digital Solution</h1>
+              <a href="" class="btn-quote" data-aos="fade-right">Free Quote</a>
+              <a href="" class="btn-contact" data-aos="fade-left">Contact Us</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img3.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block" data-aos="fade-up"
+            data-aos-duration="4000">
+                <h1>Creative & Innovative Digital Solution</h1>
+                <a href="" class="btn-quote" data-aos="fade-right">Free Quote</a>
+                <a href="" class="btn-contact" data-aos="fade-left">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="container sub_header bg-red">
+          <div class="row">
+            <div class="col-lg-4 col-11 mx-auto d-flex justify-content-center align-items-center sub_header-first">
+              <span><img src="images/project-management.png" class="img-fluid"></span>
+              <span>Innovation</span>
+            </div>
+             <div class="col-lg-4 col-11 mx-auto d-flex justify-content-center align-items-center sub_header-second">
+              <span><img src="images/value-proposal.png" class="img-fluid"></span>
+              <span>Innovation</span>
+            </div>
+             <div class="col-lg-4 col-11 mx-auto d-flex justify-content-center align-items-center sub_header-third">
+              <span><img src="images/management-service.png" class="img-fluid"></span>
+              <span>Innovation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-------------------------quote section start-------------------------->
+     <div class="container-fluid">
+        <div class="row">
+           <div class="col-lg-12 col-11 mx-auto">
+               <div class="row">
+                   <div class="col-lg-12 quote-heading text-center">
+                       <h1>FREE QUOTE</h1>
+                   </div>
+                   <div class="col-lg-10 mx-auto req-quote my-5">
+                    <h1 class="main-header">REQUEST A QUOTE</h1>
+                    <p>Need A Free Quote? Please Feel Free to Contact Us</p>
+                    <p class="my-5">Welcome to Jagma Consulting, where we are committed to driving your success through tailored consulting services. Our team of experienced consultants is dedicated to partnering with you to navigate challenges, capitalize on opportunities, and achieve your goals.</p>
+                    <p class="my-5">Before we begin our journey together, we'd like to gather some key information to better understand your unique needs and objectives. This will help us provide you with a comprehensive and customized solution that delivers real, measurable results.</p>
+                    <h1 class="blue-quote">Let's Get Started</h1>
+                    <p class="my-5">To kick off our collaboration, we invite you to fill out the free quote form. This will give us a head start in understanding your requirements and tailoring our approach accordingly. Rest assured, your information will remain confidential and will only be used for the purpose of providing you with an accurate quote.</p>
+                    <div class="quote-info d-flex align-items-center mb-5">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h2>Call to ask any question</h2>
+                            <h1 class="blue-quote">+91 9234738747</h1>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-10 col-12 mx-auto quote_area my-3">
+                   <form id = "form1">
+                        <div class="quote_heading text-center">
+                            <h3>Unlocking Your Potential Through Expert Consultation</h3>
+                        </div>
+                            <hr class="hr1">
+                            <div class="quote_logo d-flex justify-content-around align-items-center text-center">
+                                <div>
+                                    <i class="fa-solid fa-user" id="quote_btn1"></i>
+                                    <h5>Personal Details</h5>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-sitemap" id="quote_btn2"></i>
+                                    <h5>Organisation Details</h5>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-briefcase" id="quote_btn3"></i>
+                                    <h5>personal Details</h5>
+                                </div>
+                            </div>
+                            <!-----------------first page of quote--------------------->
+                            <div class="quote_field quote_field-first mx-auto" id="quote1">
+                                <h1 class="mb-3">Personal Details</h1>
+                                <hr class="hr2">
+                                <div>
+                                <div class="d-flex">
+                                <div>
+                                  <input type="text" name="name" id="name" placeholder="Your Name*">
+                                  <span class="error" id="name_error"></span>
+                                </div>
+                                <div>
+                                  <input type="text" name="email" id="email" placeholder="Email Id*">
+                                  <span class="error" id="email_error"></span>
+                                </div>
+                                <div>
+                                  <input type="text" id="aemail" id="aemail" placeholder="Alternate Email Id"><br>
+                                  <span class="error" id="ale_error"></span>
+                                </div>
+                                </div>
+                                <div class="d-flex">
+                                <div>
+                                  <input type="text" name="phone" id="phone" placeholder="Phone*">
+                                  <span class="error" id="phone_error"></span>
+                                </div>
+                                <div class="">
+                                  <input type="text" name="aphone" id="aphone" placeholder="Alternate">
+                                  <span class="error" id="alp_error"></span>
+                                </div>
+                                </div>
+                                </div>
+                                <button type="button" onclick="send1()">Next</button>
+                                <span class="new_msg"></span>
+                            </div>
+                              <!-----------------second page of quote--------------------->
+                            <div class="quote_field quote_field-second mx-auto" id="quote2">
+                                <h1>Organisational Details</h1>
+                                <hr class="hr2">
+                            <div class="quote_field2 d-flex justify-content-around align-items-center">
+                            <div>
+                                <input type="text" name="org" id="org" placeholder="Your Organisation Name*">
+                                
+                                    <span class="error" id="org_error"></span>
+                                
+                            </div>
+                            <div>
+                                <input type="text" name="url" id="url" placeholder="URL of your Organisation*">
+                                
+                                    <span class="error" id="url_error"></span>
+                                
+                            </div>
+                            <div>
+                                <input type="text" name="head" id="head" placeholder="Total Head Count*">
+                                
+                                    <span class="error" id="head_error"></span>
+                                
+                            </div>
+                            </div>
+                            <div class="m-5">
+                                <button type="button" onclick="send2()" class="d-block">Next</button>
+                                <span class="new_msg"></span>
+                            </div>
+                            </div>
+
+                            
+                              <!-----------------third page of quote--------------------->
+                            <div class="quote_field mx-auto quote-field_third" id="quote3">
+                                <h1>Project Details</h1>
+                                <hr class="hr2 m-0 p-0">
+                            <div class="quote_field2 d-flex justify-content-around align-items-center">
+                            <div>
+                                <input type="text" name="project" id="project" placeholder="Project Type*">
+                                
+                                    <span class="error" id="project_error"></span>
+                                
+                            </div>
+                            <div>
+                                <input type="text" name="skill" id="skill" placeholder="Skills and Technology">
+                                
+                                    <span class="error" id="skill"></span>
+                            
+                            </div>
+                            <div>
+                                <input type="text" name="tent" id="tent" placeholder="Tentative project start date">
+                                
+                                    <span class="error" id="tent_error"></span>
+                                
+                            </div>
+                            </div>
+                             <div class="quote-field2 d-flex justify-content-around align-items-center">
+                            <div>
+                                <input type="text" name="location" id="location" placeholder="Project Locations">
+                                
+                                    <span class="error" id="location_error"></span>
+                                
+                            </div>
+                            <div>
+                                <input type="text" name="requir" id="requir" placeholder="Select Requirement*">
+                                
+                                    <span class="error" id="requir_error"></span>
+                                
+                            </div>
+                            <div>
+                                <input type="text" name="time" id="time" placeholder="Estimated Delivery Time">
+                                
+                                    <span class="error" id="time_error"></span>
+                                
+                            </div>
+                            </div>
+                             <div class="quote-field2 d-flex justify-content-around align-items-center">
+                            <div>
+                                <input type="text" name="pricing" id="pricing" placeholder="Select Pricing Quote*">
+                                
+                                    <span class="error" id="pricing_error"></span>
+                                
+                            </div>
+                            <div>
+                                <input type="text" name="size" id="size" placeholder="Select Project Size*">
+                                
+                                    <span class="error" id="size_error"></span>
+                                
+                            </div>
+                            <div>
+                                <input type="text" name="org" id="org" placeholder="Expected Resource Loading Sheet" class="border-0">
+                                
+                                
+                            </div>
+                            </div>
+                            <div class="d-inline-block">
+                                <input type="file" name="file1" class="quote-file">
+                            </div>
+                            <div class="m-5">
+                                <button type="button" onclick="send2()" class="d-block">Request A Quote</button>
+                                <span class="new_msg"></span>
+                            </div>
+                            </div>
+                          </form>
+                   </div>
+
+                   
+                   <div class="col-lg-10 quote-text mx-auto my-5 fs-3">
+                    <p>Once we receive your submission, our team will review your details and reach out to you within the next 3 Business days to discuss the next steps. We're excited to embark on this journey with you and help you achieve sustainable growth and success.</p>
+                    <p>If you have any immediate questions or would like to speak to a consultant before filling out the quote, please don't hesitate to contact us at [contact information].</p>
+                    <p>Thank you for considering Jagma Consulting. We look forward to the opportunity of working together!</p>
+                   </div>
+               </div>
+           </div>
+        </div>
+     </div>
+   <!-----------------------------quote html ends here------------------------------------>
+   <div class="container-fluid footer" data-aos="fade-up"
+   data-aos-easing="linear"
+   data-aos-duration="2000">
+<div class="row m-0 p-0">
+<div class="col-lg-4 col-11 mx-auto">
+ <div class="footer-div first-footer-div mx-auto p-4">
+   <img src="images/jagma.png" class="img-fluid">
+   <p class="my-5">At <b>JAGMA CONSULTING</b>, we believe that technology should empower businesses and individuals. We provide innovative digital solutions for businesses of all sizes, from small businesses to large enterprises.</p>
+   <a href="">Free Quote</a>
+ </div>
+</div>
+<div class="col-lg-4 col-11 mx-auto">
+ <div class="footer-div mx-auto my-5">
+   <h1 class="main-header">Get In Touch</h1>
+   <p class="para"><i class="fa-solid fa-location-crosshairs"></i>
+   <span>West Boring Canal Road,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patna, Bihar, India, Pincode:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;800001</span></p>
+   <p><i class="fa-solid fa-envelope"></i><span>support@jagmaconsulting.com</span></p>
+   <p><i class="fa-solid fa-phone"></i><span>+91 9234738747</span></p>
+   <div class="footer-logo mt-4">
+     <i class="fa-brands fa-twitter"></i>
+     <i class="fa-brands fa-facebook"></i>
+     <i class="fa-brands fa-linkedin"></i>
+     <i class="fa-brands fa-instagram"></i>
+   </div>
+ </div>
+</div>
+<div class="col-lg-2 col-11 mx-auto">
+ <div class="footer-div mx-auto my-5">
+   <h1 class="main-header">Quick Links</h1>
+   <p class="para"><i class="fa-solid fa-arrow-right"></i><span>Home</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>About Us</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>Our Services</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>Meat the team</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>Our Features</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>Contact Us</span></p>
+ </div>
+</div>
+<div class="col-lg-2 col-11 mx-auto">
+ <div class="footer-div mx-auto my-5">
+   <h1 class="main-header">Quick Links</h1>
+   <p class="para"><i class="fa-solid fa-arrow-right"></i><span>Home</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>About Us</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>Our Services</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>Meat the team</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>Our Features</span></p>
+   <p><i class="fa-solid fa-arrow-right"></i><span>Contact Us</span></p>
+ </div>
+</div>
+</div>
+</div>
+<div class="text-center text-white bottom">
+<p>Copyright @ 2023 JAGMA Technologies Pvt Ltd . All Rights Reserved.</p>
+</div>
+<div id="scroll-top"><i class="bi bi-arrow-up-circle-fill"></i></div>
+
+<script src="js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+</html>
